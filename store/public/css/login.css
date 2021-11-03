@@ -1,0 +1,67 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+}
+
+.login-contents {
+    width: 90%;
+    height: 15rem;
+    border-radius: 0.5rem;
+    box-shadow: black 5px 5px 12px;
+}
+
+.login {
+    background-color: rgb(53, 96, 246);
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.login-info {
+    padding: 2rem 0 0 1rem;
+}
+
+.login-email {
+    padding-bottom: 2rem;
+}
+
+img {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+input {
+    height: 2rem;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.submit {
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    text-align: right;
+}
+
+.login-submit {
+    background-color: rgb(53, 96, 246);
+    padding: 0.3rem;
+    color: white;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+/* pc対応*/
+
+@media screen and (min-width:780px) {
+    .login-contents {
+        width: 32rem;
+        height: 15rem;
+        border-radius: 0.5rem;
+        box-shadow: black 5px 5px 12px;
+    }
+}

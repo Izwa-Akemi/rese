@@ -1,0 +1,344 @@
+ body {
+   background-color: rgba(128, 128, 128, 0.158);
+ }
+
+ .cont-info {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: flex-start;
+   min-height: 100%;
+   margin: auto;
+ }
+
+ .user-box {
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   font-size: 28px;
+   padding: 2rem;
+ }
+
+ .user-name {
+   text-align: center;
+   font-weight: 700;
+   color: rgb(66, 66, 66);
+ }
+
+ /* --------------------------------------
+ 予約状況
+  ----------------------------------------*/
+
+ .reseve-info {
+   width: 95%;
+ }
+
+ .reseve-title {
+   font-size: 24px;
+   padding: 20px;
+   margin: 0 10px;
+   position: relative;
+   font-weight: 700;
+   color: rgb(66, 66, 66);
+ }
+
+ .reseve-box {
+   background-color: #3560f6;
+   border-radius: 5px;
+   padding: 30px;
+   margin-bottom: 3%;
+   width: 95%;
+   margin:1rem auto;
+   max-width: 400px;
+ }
+
+ .square {
+   position: absolute;
+   left: 0;
+   top: 20px;
+   display: block;
+   width: 15px;
+   height: 15px;
+   background-color: #3560f6;
+   padding-left: 10px;
+   font-size: 15px;
+   box-shadow: #fff 3px 3px, #3560f6 3px 3px 0 0.5px;
+ }
+
+ .table-title {
+   padding-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .reseve-num {
+   color: #fff;
+   display: inline-block;
+ }
+
+ .deleat-btn {
+   color: #fff;
+   font-size: 20px;
+   border: solid 2px #fff;
+   border-radius: 50%;
+   background-color: #3560f6;
+   width: 24px;
+   height:24px;
+ }
+
+ .reseve-table {
+   color: #fff;
+   display: block;
+ }
+
+ .reseve-table th {
+   padding-top: 1rem;
+   text-align: left;
+   vertical-align: top;
+ }
+
+ .reseve-table td {
+   text-align: left;
+   padding-left: 30px;
+   padding-top: 1rem;
+ }
+
+ td div{
+   padding: 1rem 0;
+   line-height: 1.5rem;
+ }
+ /* --------------------------------------
+  お気に入り店舗
+  ----------------------------------------*/
+
+ .favorite {
+   display: flex;
+   margin: 50px 0;
+   width: 90%;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ .favorite-title {
+   width: 100%;
+   margin-bottom: 30px;
+   font-size: 24px;
+   color: rgb(66, 66, 66);
+   font-weight: 700;
+ }
+
+ .card {
+   background: #fff;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px #ccc;
+   width: 48%;
+   display: inline-block;
+   vertical-align: top;
+   margin: 1rem 0;
+ }
+
+ .card-img {
+   border-radius: 5px 5px 0 0;
+   width: 100%;
+   height: auto;
+ }
+
+ .card-content {
+   padding: 8px 20px 20px;
+ }
+
+ .card-title {
+   font-size: 18px;
+   font-weight: 700;
+ }
+
+ .card-text {
+   font-size: 14px;
+   line-height: 1.5;
+   margin-bottom: 0.2em;
+ }
+
+ .card-link {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .shop-detail {
+   display: inline-block;
+   margin: 0 0 10px 20px;
+   padding: 0.2em 0.8em;
+   text-decoration: none;
+   border-radius: 4px;
+   color: #ffffff;
+   font-size: 16px;
+   background-color: #3560f6;
+ }
+
+ .fav-button {
+   display: flex;
+   justify-content: space-between;
+   margin-right: 3%;
+ }
+
+ .heart {
+   width: 25px;
+   height: 25px;
+ }
+
+ /*----編集時の画面-----*/
+
+ .reseve-edit-table {
+   color: #fff;
+   display: none;
+ }
+
+ .reseve-edit-table th {
+   padding-top: 20px;
+   text-align: left;
+   vertical-align: top;
+ }
+
+ .reseve-edit-table td:not(.update,.cancel) {
+   text-align: left;
+   padding-left: 30px;
+ }
+
+ /*--ボタン----*/
+ .update-button{
+  background-color: rgba(111, 140, 219, 0.486);
+  padding: 10px 10px;
+ }
+ .cancel-button{
+  margin-top: 20px;
+  padding: 10px 15px;
+ }
+
+ .shop-name {
+  padding-top: 20px;
+}
+img.ui-datepicker-trigger{
+  cursor: pointer;
+  position: relative;
+  left: 70%;
+  bottom:35px;
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+
+}
+.ui-icon{
+  width: 8px;
+}
+
+ /*------モーダル--------*/
+
+ .modal {
+   display: none;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   width: 100%;
+  
+ }
+
+ .modal__bg {
+   background: rgba(0, 0, 0, 0.8);
+   height: 100vh;
+   position: absolute;
+   left: -20%;
+   width: 200vw;
+ }
+
+ .modal__content {
+   background: #fff;
+   padding: 40px;
+   position: absolute;
+   width: 95%;
+ }
+
+ .date ,.peoples,.reseve_time{
+   width:90%;
+   color: rgb(66, 66, 66);
+   margin-top: 20px;
+   font-size: 0.8rem;
+ }
+
+/* レビュー画面*/
+h2{
+  border-bottom: rgb(180, 180, 180) 1px solid;
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+}
+.modal__content p{
+  color:#fae319;
+}
+.modal__content p span{
+  font-size: 1.3rem;
+}
+
+.review-title{
+  padding-top:15px;
+  font-size: 1.2;
+}
+
+.comment-area{
+  width: 100%;
+  border-color: rgb(180, 180, 180);
+  margin-bottom: 15px;
+}
+
+.rev-submit{
+  background-color: #3560f6;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+ /* pc版レイアウト*/
+ @media screen and (min-width:680px) {
+   .favorite{
+     width:50%;
+     margin:0px;
+     height:1rem;
+   }
+   .favorite-title{
+     padding: 20px;
+     margin: 0;
+   }
+   .reseve-info{
+     width: 50%;
+   }
+
+   .modal__content {
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 840px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+ }
+
+ @media screen and (min-width:840px){
+   .cont-info{
+     width: 80%;
+     max-width: 1200px;
+     justify-content: space-between;
+   }
+ 
+   .reseve-box{
+     margin: 0;
+     margin-top: 20px;
+    margin-right: auto;
+   }
+   .date ,.peoples,.reseve_time{
+    font-size: 1rem;
+  }
+ }
+
+ .cont-info{
+   max-width: none;
+ }

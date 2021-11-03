@@ -1,0 +1,226 @@
+body {
+    background-color: rgba(128, 128, 128, 0.158);
+}
+:focus{
+    outline: none;
+}
+/*--2つにする--*/
+.main-section{
+    display: flex;
+    justify-content:space-between;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 1020px;
+    clear:both;
+}
+/*---shop--*/
+.shop {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+.shop-img img{
+    width: 100%;
+}
+.shop-name{
+   margin-bottom: 1.5rem;
+ }
+.shop-name button{
+   background-color: white;
+   box-shadow: black 5px 5px 12px;
+   border: none;
+   width: 30px;
+   height: 30px;
+}
+.shop-name label{
+   font-size: 1.7rem;
+   font-weight: bold;
+   padding-left: 0.5rem;
+   vertical-align: middle;
+}
+.shop-message p{
+font-size: 1rem;
+margin-top: 2rem;
+}
+span{
+    padding-right: 10px;
+}
+
+/*---apoint--*/
+.apoint{
+   margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.apoint-wrap {
+    background-color: rgb(53, 96, 246);
+    border-radius: 0.5rem;
+    position: relative;
+    top: -30px;
+}
+
+.apoint-info h1 {
+    color:  white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.apoint-info{
+    margin-left: 1.5rem;
+}
+
+.date {
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+/*---プルダウン-----*/
+.time,.people{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 2rem;
+    margin-top: 1rem;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    /* デフォルトのスタイルを無効 */
+    border-radius: 0;
+    padding-left: 10px;
+    height: 2rem;
+    width: 80%;  
+    border: none;
+    border-right:1px solid #E2E2E2;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    
+}
+
+/* セレクトボックスの矢印デザイン変更 */
+
+select {
+    background-image: url(../img/pulldown.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 10px 7px;
+}
+
+/*----予約リスト------*/
+
+.apoint-pass{
+    padding-left: 1.5rem;
+    width: 85%;
+    margin-bottom: 12rem;
+    box-sizing: border-box;
+    
+}
+.apoint-table{
+    background-color: rgb(85, 128, 247);
+    color: white;
+    margin-top: 1rem;
+    height: 10rem;
+    width: 100%;
+    text-align: left;
+    border-radius: 0.5rem;
+}
+
+.apoint-table th{
+    font-size: 1rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    padding-left: 1rem;
+    width: 5rem;
+}
+
+.apoint-table td{
+    font-size: 1rem;
+    height: 1.2rem;
+    vertical-align: middle;
+}
+.apont-table-topspace{
+    padding-top: 1rem;
+}
+.apont-table-bottomspace{
+    padding-bottom: 1rem;
+}
+.apoint-submit{
+    height: 9rem;
+    position: relative;
+}
+
+.apoint-submit button{
+    position: absolute;
+    top: 8rem;
+    height: 3rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 100%;
+    background-color: rgb(0, 63, 245);
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+img.ui-datepicker-trigger{
+    cursor: pointer;
+    position: relative;
+    right:30px;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+  }
+.ui-icon{
+    width: 8px;
+}
+
+.date,.peoples,.times{
+    width:80%;
+}
+
+.review{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: black 1px solid;
+}
+
+.review h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 5%;
+}
+
+.review ul{
+    padding:20px ;
+    margin:20px 5%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.star{
+    color:#ffcf32;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.review ul li:last-child{
+    border-top: rgb(146, 146, 146) 1px solid;
+    padding-top:15px;
+}
+
+.review ul li:last-child p{
+   line-height: 1.5;
+}
+/* pc対応*/
+@media screen and (min-width:780px) {
+.apoint,.shop{
+    width: 50%;
+}
+    .shop{
+        padding: 20px;
+    }
+    
+}
