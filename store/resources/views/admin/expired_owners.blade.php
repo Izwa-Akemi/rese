@@ -28,7 +28,7 @@
                                             <td class="px-4 py-3"> {{ $owner->name }}</td>
                                             <td class="px-4 py-3 hidden md:block">{{ $owner->email }}</td>
                                             <td class="px-4 py-3"> {{ $owner->deleted_at->diffForHumans() }}</td>
-                                            <form id="delete_{{$owner->id}}" method="post" action="{{ route('admin.expired-owners.destroy',['owner' => $owner ->id])}}">
+                                            <form id="delete_{{$owner->id}}" method="post" action="{{ route('admin.expired_owners.destroy',['owner' => $owner ->id])}}">
                                             @csrf
                                             <td class="px-4 py-3">
                                                 <a href="#" data-id="{{$owner->id}}" onclick="deletePost(this)" class="text-white bg-red-400 border-0 py-2 px-4 focus:outline-none hover:bg-red-500 rounded">削除</a>

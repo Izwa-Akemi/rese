@@ -12,12 +12,7 @@
 
 <body>
     <header>
-        @auth
-        @include('layouts.header_home2')
-        @endauth
-        @guest
         @include('layouts.header_home')
-        @endguest
     </header>
     <main>
         <section class="main-section" id="main-section">

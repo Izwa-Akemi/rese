@@ -139,13 +139,13 @@ class OwnersController extends Controller
     public function expiredOwnerIndex()
     {
         $expiredOwners = Owner::onlyTrashed()->get();
-        return view('admin.expired-owners', compact('expiredOwners'));
+        return view('admin.expired_owners', compact('expiredOwners'));
     }
     public function expiredOwnerDestroy($id)
     {
         Owner::onlyTrashed()->findOrFail($id)->forceDelete();
         return redirect()
-            ->route('admin.expired-owners.index')
+            ->route('admin.expired_owners.index')
             ->with([
                 'message' => 'オーナー情報を完全に削除しました。',
                 'status' => 'alert'

@@ -47,8 +47,10 @@ php artisan serve
 
 ## インストール後の実施事項
 
-予約前日にメールを送る場合下記のコマンドを実効してください
-php artisan email:reminduser
+画像のデータは
+https://docs.google.com/spreadsheets/d/1AD37VJF0kZwqAqAbfE4N89Is_dAVt0jZaT58WNsAhHw/edit#gid=1252551999
+「店舗データ一覧」のURLを使用しております。
+画像登録の際はこちらのURLを使用して下さい。
 
 ## メールの補足
 

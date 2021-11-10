@@ -22,13 +22,8 @@
         <script src="{{ mix('js/edit.js') }}"></script>
     </head>
     <body>
-    <header>
-        @auth
-        @include('layouts.header2')
-        @endauth
-        @guest
+    <header>   
         @include('layouts.header')
-        @endguest
     </header>
   
     </body>
