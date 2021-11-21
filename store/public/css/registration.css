@@ -8,7 +8,6 @@
     }
     .regist-contents{
         width: 90%;
-        height: 20rem;
         border-radius: 0.5rem;
         box-shadow: black 5px 5px 12px;
     }
@@ -45,6 +44,7 @@
         padding-top: 1rem;
         padding-right: 1.5rem;
         text-align: right;
+      
     }
     
     .regist-submit{
@@ -53,6 +53,7 @@
         color: white;
         border-radius: 0.3rem;
         border: none;
+        margin-bottom: 30px;
     }
 
 /* pc対応*/
@@ -60,7 +61,6 @@
 @media screen and (min-width:780px) {
     .regist-contents {
         width: 32rem;
-        height: 20rem;
         border-radius: 0.5rem;
         box-shadow: black 5px 5px 12px;
     }

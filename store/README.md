@@ -49,8 +49,8 @@ php artisan serve
 
 画像のデータは
 https://docs.google.com/spreadsheets/d/1AD37VJF0kZwqAqAbfE4N89Is_dAVt0jZaT58WNsAhHw/edit#gid=1252551999
-「店舗データ一覧」のURLを使用しております。
-画像登録の際はこちらのURLを使用して下さい。
+「店舗データ一覧」の画像を使用しております。
+画像登録の際はこちらのURLから画像をダウンロードして下さい。
 
 ## メールの補足
 

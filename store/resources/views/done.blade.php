@@ -11,12 +11,7 @@
 </head>
 <body>
     <header>
-        @auth
-        @include('layouts.header2')
-        @endauth
-        @guest
         @include('layouts.header')
-        @endguest
     </header>
 <main>
         <section class="main-section">

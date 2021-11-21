@@ -1,138 +1,165 @@
+/*--------------三本線-----------*/
 
-.header-section{
-    padding: 1rem;
+/*チェックボックスを見えないようにする*/
+
+#menu-btn-check {
+    display: none;
+}
+
+/*□を作成*/
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
     display: flex;
-  }
-  /*--------------三本線-----------*/
-  /*チェックボックスを見えないようにする*/
-  #menu-btn-check{
-      display: none;
-  }
-  /*□を作成*/
-  .menu-btn {
-      display: flex;
-      height: 60px;
-      width: 60px;
-      justify-content: center;
-      align-items: center;
-      z-index: 90;
-      background-color: rgb(53, 96, 246);
-      border-radius: 10px;
-      box-shadow: black 5px 5px 12px 0;
-  }
-  /*三本線を作成*/
-  .menu-btn span{
-      content: '';
-      display: block;
-      height: 2px;
-      width: 25px;
-      border-radius: 3px;
-      background-color: #ffffff;
-      position: absolute;
-  }
-  .menu-btn span:before{
-      content: '';
-      display: block;
-      height: 2px;
-      width: 15px;
-      border-radius: 3px;
-      background-color: #ffffff;
-      position: absolute;
-  }
-  .menu-btn span:after {
-      content: '';
-      display: block;
-      height: 2px;
-      width: 10px;
-      border-radius: 3px;
-      background-color: #ffffff;
-      position: absolute;
-  }
-  .menu-btn span:before {
-      bottom: 8px;
-  }
-  .menu-btn span:after {
-      top: 8px;
-  }
-  /*×ボタンを作成*/
-  #menu-btn-check:checked ~ .menu-btn span {
-      background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
-  }
-  #menu-btn-check:checked ~ .menu-btn span::before {
-      bottom: 0;
-      transform: rotate(45deg);
-      width: 25px;
-  }
-  #menu-btn-check:checked ~ .menu-btn span::after {
-      top: 0;
-      transform: rotate(-45deg);
-      width: 25px;
-  }
-  
-  /*×ボタンを実装*/
-  .menu-content {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 80;
-      background-color: #3584bb;
-  }
-  .menu-content ul {
-      padding-top: 8rem;
-  }
-  .menu-content ul li {
-      list-style: none;
-      text-align: center;
-  }
-  .menu-content ul li a {
-      display: block;
-      width: 100%;
-      font-size: 1.5rem;
-      box-sizing: border-box;
-      color:rgb(53, 96, 246);
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1.5rem;
-      padding: 2rem 15px 10px 0;
-      /*position: relative;*/
-  }
-  /*.menu-content ul li a::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-      border-top: solid 2px #ffffff;
-      border-right: solid 2px #ffffff;
-      transform: rotate(45deg);
-      position: absolute;
-      right: 11px;
-      top: 16px;
-  }*/
-  /*ボタンを押したらメニューが出てくるようにする*/
-  .menu-content {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      right: 100%;/*leftの値を変更してメニューを画面外へ*/
-      z-index: 80;
-      background-color: white;
-      transition: all 0.5s;/*アニメーション設定*/
-  }
-  
-  /*ボタンがタップされたとき、すなわちチェックボックスにチェックがついたとき、メニューが画面に表示*/
-  #menu-btn-check:checked ~ .menu-content {
-      right:0;/*メニューを画面内へ*/
-      background-color: white;
-  }
-  
-  .header-title{
-  padding:1rem;
-  }
-  .header-title h1{
-      font-size: 2rem;
-      box-sizing: border-box;
-      color:rgb(53, 96, 246);
-      font-weight: bold;
-  }
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: rgb(53, 96, 246);
+    border-radius: 10px;
+    box-shadow: black 5px 5px 12px 0;
+}
+
+/*三本線を作成*/
+
+.menu-btn span {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
+
+/*×ボタンを作成*/
+
+#menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+    /*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    width: 25px;
+}
+
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 25px;
+}
+
+/*×ボタンを実装*/
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 80;
+    background-color: #3584bb;
+}
+
+.menu-content ul {
+    padding-top: 8rem;
+}
+
+.menu-content ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    color: rgb(53, 96, 246);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2rem 15px 10px 0;
+    /*position: relative;*/
+}
+
+/*.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}*/
+
+/*ボタンを押したらメニューが出てくるようにする*/
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: white;
+    transition: all 0.5s;
+    /*アニメーション設定*/
+}
+
+/*ボタンがタップされたとき、すなわちチェックボックスにチェックがついたとき、メニューが画面に表示*/
+
+#menu-btn-check:checked~.menu-content {
+    right: 0;
+    /*メニューを画面内へ*/
+    background-color: white;
+}
+
+.header-title {
+    position: fixed;
+    left: 80px;
+    top: 20px;
+}
+
+.header-title h1 {
+    font-size: 2rem;
+    box-sizing: border-box;
+    color: rgb(53, 96, 246);
+    font-weight: bold;
+}
