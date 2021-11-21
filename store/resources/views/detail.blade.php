@@ -42,10 +42,10 @@
                     <form action="{{route('reservation',$data)}}" method="POST">
                         @csrf
                         @if($errors->any())
-                        <div style="color:#ffffff;">
-                            【エラー】<br><br>
+                        <div class="err-color">
+                            <p>【エラー】</p>
                             @foreach ($errors->all() as $error)
-                            {{ $error }}<br>
+                            <p>{{ $error }}</p>
                             @endforeach
                         </div>
                         <br>

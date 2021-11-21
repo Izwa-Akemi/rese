@@ -224,3 +224,10 @@ img.ui-datepicker-trigger{
     }
     
 }
+
+.err-color{
+    color: #fff;
+}
+.err-color p{
+    margin-bottom: 10px;
+}
